@@ -1,0 +1,13 @@
+document.getElementById("registrationForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let event = document.getElementById("event").value;
+
+    document.getElementById("message").innerHTML =
+    "✅ Thank you, " + name + "! You have successfully registered for " + event + ".";
+
+    document.getElementById("registrationForm").reset();
+
+});
